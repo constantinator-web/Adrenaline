@@ -508,6 +508,7 @@ body {
 }
 .tracks {
   background: #0E0F0F;
+  padding-bottom: 125px;
 }
 .tracks__about {
   display: flex;
@@ -530,6 +531,7 @@ body {
   line-height: 21.6px;
   color: #fff;
   margin-bottom: 19px;
+  text-transform: uppercase;
 }
 .tracks p {
   font-family: "Roboto", sans-serif;
@@ -540,6 +542,33 @@ body {
 }
 .tracks__items-img {
   max-width: 147px;
+}
+@media (min-width: 1024px) {
+  .tracks {
+    padding-bottom: 148px;
+  }
+  .tracks__items {
+    padding: 0 35px 0 135px;
+    width: 50%;
+  }
+  .tracks__items:nth-child(2n+1) {
+    margin-right: 0;
+    width: 50%;
+  }
+  .tracks__items-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 161px;
+  }
+  .tracks__name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .tracks p {
+    font-size: 16px;
+    line-height: 160%;
+  }
 }
 
 .contacts {
