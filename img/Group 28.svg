@@ -1,0 +1,27 @@
+<svg width="161" height="121" viewBox="0 0 161 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.2" d="M9.47059 0H161L151.529 121H0L9.47059 0Z" fill="url(#paint0_radial_351_1958)"/>
+<path opacity="0.4" d="M100 52.359V14L51 19.641V58L100 52.359Z" stroke="#FF5146" stroke-width="4"/>
+<path d="M85 73.5897V30L29 36.4103V80L85 73.5897Z" stroke="#FF5146" stroke-width="4"/>
+<path d="M39 67L41 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M55 67L57 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M47 67L49 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M63 67L65 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M43 67L45 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M59 67L61 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M51 67L53 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M67 67L69 65" stroke="#FF5146" stroke-width="2"/>
+<path d="M39 60L41 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M55 60L57 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M47 60L49 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M63 60L65 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M43 60L45 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M59 60L61 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M51 60L53 58" stroke="#FF5146" stroke-width="2"/>
+<path d="M67 60L69 58" stroke="#FF5146" stroke-width="2"/>
+<defs>
+<radialGradient id="paint0_radial_351_1958" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80.2632 58.2866) rotate(89.7837) scale(62.7139 77.7885)">
+<stop stop-color="#E44A42"/>
+<stop offset="1" stop-color="#E44A42" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
