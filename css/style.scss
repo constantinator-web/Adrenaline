@@ -20,9 +20,7 @@ html {
 	box-sizing: border-box;
 }
 
-body,
-*,
-*::after,
+body, *, *::after,
 *::before {
 	box-sizing: inherit;
 }
