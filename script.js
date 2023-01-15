@@ -1,5 +1,5 @@
 "use strict"
-let user = 'Вася';
-let userName  ;
-userName = user ;
-console.log(userName);
+let num = 0;
+while (num < 3) {
+  console.log(`Число: ${num}`)
+}
