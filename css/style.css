@@ -63,6 +63,7 @@ body {
   z-index: 100;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  padding: 30px 0;
 }
 
 .modal__header {
@@ -70,11 +71,18 @@ body {
   justify-content: space-between;
 }
 
+/*.close {
+	width: 40px;
+	height: 40px;
+}*/
 .close::before {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-image: url(/img/mobile-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
 }
 
 .modal__menu-list {
