@@ -29,7 +29,6 @@ body, *, *::after,
 
 body {
   min-width: 320px;
-  overflow-x: hidden;
   letter-spacing: 0.04em;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -68,6 +67,7 @@ body {
   z-index: 100;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
   padding: 30px 0;
   opacity: 0;
   pointer-events: none;
@@ -109,10 +109,6 @@ body {
   margin: 60px 0;
 }
 
-/*.close {
-	width: 40px;
-	height: 40px;
-}*/
 .close::before {
   content: "";
   width: 40px;
@@ -154,6 +150,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 .header__light::before {
   content: "";
