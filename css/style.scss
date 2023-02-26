@@ -37,6 +37,9 @@ body {
 	font-weight: 700;
 }
 
+.lock {
+	overflow: hidden;
+}
 // container start
 .container {
 	padding: 0 30px;
@@ -66,12 +69,20 @@ body {
 	left: 0;
 	top: 0;
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 200vh;
 	height: auto;
 	z-index: 100;
 	backdrop-filter: blur(10px);
 	padding: 30px 0;
-	//opacity: 0;
+	opacity: 0;
+	pointer-events: none;
+//overflow: hidden;
+}
+
+.open {
+	opacity: 1;
+	pointer-events: all;
+	overflow: hidden;
 }
 
 .modal__header {

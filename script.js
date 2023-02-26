@@ -32,3 +32,17 @@ if (isMobile.any()) {
   document.body.classList.add('_pc');
 };
 
+const menuBtn = document.querySelector('.header-menu__btn');
+if (menuBtn) {
+  const modal = document.querySelector('.modal');
+  const close = document.querySelector('.close');
+  menuBtn.addEventListener("click", function (e) {
+    modal.classList.toggle('open');
+    document.body.classList.toggle("lock");
+  });
+  close.addEventListener("click", function (e){ 
+    modal.classList.toggle('open');
+    document.body.classList.toggle("lock");
+  });
+}
+

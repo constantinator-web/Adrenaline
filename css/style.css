@@ -35,6 +35,10 @@ body {
   font-weight: 700;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 30px;
   margin: 0 auto;
@@ -59,12 +63,20 @@ body {
   left: 0;
   top: 0;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 200vh;
   height: auto;
   z-index: 100;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 30px 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.open {
+  opacity: 1;
+  pointer-events: all;
+  overflow: hidden;
 }
 
 .modal__header {
