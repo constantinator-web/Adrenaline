@@ -38,6 +38,11 @@ body {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  border-style: none;
+}
+
 .container {
   padding: 0 30px;
   margin: 0 auto;
@@ -594,6 +599,44 @@ body {
     max-width: 755px;
   }
 }
+.price {
+  background: #111;
+  overflow: hidden;
+}
+
+.price__header {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Druk Text Wide Cyr Heavy", sans-serif;
+}
+
+.price__slider {
+  display: flex;
+  flex: none;
+}
+
+.price__slider-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 390px;
+}
+
+.price__slider-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.price__slider :first-child {
+  display: flex;
+}
+
+.price__slider :not(:first-child) {
+  display: none;
+}
+
 .tracks {
   background: #0E0F0F;
   padding-bottom: 125px;
