@@ -619,6 +619,7 @@ img {
 
 .price__slider-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-height: 390px;
@@ -635,7 +636,7 @@ img {
   display: flex;
 }
 
-.price__slider :not(:first-child) {
+.price__slider .price__slider-card:not(:first-child) {
   display: none;
 }
 
@@ -647,7 +648,7 @@ img {
   align-items: center;
   position: absolute;
   top: 50%;
-  left: 90%;
+  right: -55px;
 }
 
 .price__slider-control-next::before {
@@ -658,7 +659,6 @@ img {
   border-right: 6px solid #fff;
   transform: rotate(45deg);
   position: relative;
-  right: 10%;
   z-index: 2;
 }
 
@@ -681,7 +681,7 @@ img {
   align-items: center;
   position: absolute;
   top: 50%;
-  left: -15%;
+  left: -55px;
 }
 
 .price__slider-control-previous::before {
@@ -692,7 +692,6 @@ img {
   border-left: 6px solid #fff;
   transform: rotate(-45deg);
   position: relative;
-  right: -10%;
   z-index: 2;
 }
 
