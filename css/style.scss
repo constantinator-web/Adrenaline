@@ -703,6 +703,7 @@ img {
 //slider start
 .price {
 	background: #0E0F0F;
+	min-height: 100%;
 	overflow: hidden;
 }
 
@@ -725,7 +726,7 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-height: 390px;
+	//max-height: 390px;
 }
 
 .price__slider-img {
@@ -741,7 +742,7 @@ img {
 .price__slider .price__slider-card:not(:first-child) {
 	display: none;
 }
- 
+
 .price__slider-control-next {
 	display: flex;
 	width: 83px;
@@ -808,6 +809,49 @@ img {
 	left: 0;
 }
 
+.price__slider-card-name {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "Druk Text Wide Cyr Heavy", sans-serif;
+	font-size: 22px;
+	line-height: 33.6px;
+	margin-bottom: 6px;
+}
+
+.price__slider-card-subname {
+	color: #fff;
+	font-family: "Robto", sans-serif;
+	margin-bottom: 30px;
+}
+
+.price__slider-card-params .price__slider-card-param:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.price__slider-card-params {
+	color: #565757;
+	font-size: 16px;
+	line-height: 22.4px;
+}
+
+.price__slider-param-name {
+	
+}
+/*.icon-speed::before {
+	content: url(img/control.png);
+	color: #fff;
+}
+
+.icon-speed {
+	color: #fff;
+	font-size: 20px;
+}*/
+
+.img-speeder {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+}
 
 
 // tracks
