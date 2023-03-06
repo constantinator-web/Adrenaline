@@ -831,29 +831,32 @@ img {
 .price__slider-card-params {
 	color: #565757;
 	font-size: 16px;
-	line-height: 22.4px;
+	line-height: 16px;
+	min-width: 260px;
 }
 
-.price__slider-param-name {
-	
+.price__slider-card-param {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
 }
-/*.icon-speed::before {
-	content: url(img/control.png);
-	color: #fff;
+.icon-speeder, .icon-control, .icon-retard  {
+	margin-right: 14px;
 }
 
-.icon-speed {
-	color: #fff;
-	font-size: 20px;
-}*/
-
-.img-speeder {
+.price__slider-card-param-value {
+	background: #1B1F22;
 	display: inline-block;
-	width: 20px;
 	height: 16px;
+	width: 96px;
 }
 
-
+.price__slider-card-param-value span {
+	background-image: url("../img/power.svg");
+	display: inline-block;
+    height: 16px;
+	width: 50%;
+}
 // tracks
 
 .tracks {
