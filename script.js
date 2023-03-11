@@ -46,3 +46,6 @@ if (menuBtn) {
   });
 }
 
+const sliderCards = document.querySelectorAll(".price__slider-card");
+console.log(sliderCards);
+
