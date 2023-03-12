@@ -46,6 +46,40 @@ if (menuBtn) {
   });
 }
 
-const sliderCards = document.querySelectorAll(".price__slider-card");
-console.log(sliderCards);
+const sliderWraper = document.querySelector(".price__wraper");
+const slider = document.querySelector(".price__slider");
+const slides = document.querySelectorAll(".price__slider-card");
+const control = document.querySelectorAll(".control");
 
+console.log(sliderWraper);
+console.log(slider);
+console.log(slides);
+console.log(control);
+
+let activeOrder = 0;
+
+init();
+function init() {
+  for (let i = 0; i < slides.length; ++i) {
+    let slide = slides[i];
+    slide.dataset.order = i;
+  }
+  activeOrder = Math.floor(slides.length / 2);
+
+  update();
+}
+
+console.log(activeOrder);
+
+function update() {
+  const {width, height} = slider.getBoundingClientRect();
+  for (let i = 0; i < slides.length; i++) {
+    const leftSlide = document.querySelector(
+      `.price__slider-card[data-order="${activeOrder - i}"]`
+      );
+      console.log(leftSlide);
+      if (leftSlide) {
+        leftSlide.style.left = `${width / 2}px`;
+      }
+  }
+}
