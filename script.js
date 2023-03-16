@@ -81,5 +81,14 @@ function update() {
       if (leftSlide) {
         leftSlide.style.left = `${width / 2}px`;
       }
+
+      const rightSlide = document.querySelector(
+        `.price__slider-card[data-order="${activeOrder + ++i}"]`
+        );
+        console.log(rightSlide);
+        if (rightSlide) {
+          rightSlide.style.right = `${width / 2}px`;
+        }
+
   }
 }
