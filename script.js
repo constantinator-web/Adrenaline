@@ -65,30 +65,31 @@ function init() {
     slide.dataset.order = i;
   }
   activeOrder = Math.floor(slides.length / 2);
+  console.log(activeOrder);
 
   update();
 }
 
-console.log(activeOrder);
 
 function update() {
-  const {width, height} = slider.getBoundingClientRect();
+  const {width} = slider.getBoundingClientRect();
   for (let i = 0; i < slides.length; i++) {
     const leftSlide = document.querySelector(
       `.price__slider-card[data-order="${activeOrder - i}"]`
       );
+
       console.log(leftSlide);
       if (leftSlide) {
-        leftSlide.style.left = `${width / 2}px`;
+        leftSlide.style.left = `${width / (2 + 10000 * i) }px`;
       }
 
       const rightSlide = document.querySelector(
-        `.price__slider-card[data-order="${activeOrder + ++i}"]`
+        `.price__slider-card[data-order="${activeOrder + i}"]`
         );
-        console.log(rightSlide);
+        //console.log(rightSlide);
         if (rightSlide) {
-          rightSlide.style.right = `${width / 2}px`;
+          rightSlide.style.left = `${width / (2 - 0.75*i)}px`;
+          //rightSlide.style.display = "none";
         }
-
   }
 }
