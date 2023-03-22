@@ -624,6 +624,7 @@ img {
 
 .price__slider-card {
   position: absolute;
+  background: #0C1011;
 }
 
 .price__slider-img {
@@ -643,6 +644,7 @@ img {
   top: 50%;
   right: -55px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .price__slider-control-next::before {
@@ -677,6 +679,7 @@ img {
   top: 50%;
   left: -55px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .price__slider-control-previous::before {

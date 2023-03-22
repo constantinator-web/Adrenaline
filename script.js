@@ -63,6 +63,7 @@ function init() {
   for (let i = 0; i < slides.length; ++i) {
     let slide = slides[i];
     slide.dataset.order = i;
+    slide.addEventListener("click", clickHolder);
   }
   activeOrder = Math.floor(slides.length / 2);
   console.log(activeOrder);
@@ -73,6 +74,9 @@ function init() {
 
 function update() {
   const {width} = slider.getBoundingClientRect();
+  const slideRect = slides[0].getBoundingClientRect();
+  const a = width / 2;
+  const delta = Math.PI / slides.length ;
   for (let i = 0; i < slides.length; i++) {
     const leftSlide = document.querySelector(
       `.price__slider-card[data-order="${activeOrder - i}"]`
@@ -80,16 +84,25 @@ function update() {
 
       console.log(leftSlide);
       if (leftSlide) {
-        leftSlide.style.left = `${width / (2 + 10000 * i) }px`;
+          leftSlide.style.zIndex = slides.length - i; 
+          leftSlide.style.left = `${
+            width / 2 + a * Math.cos((Math.Pi * 3) / 2 - delta * i *2) 
+        }px`;
       }
 
       const rightSlide = document.querySelector(
         `.price__slider-card[data-order="${activeOrder + i}"]`
         );
-        //console.log(rightSlide);
         if (rightSlide) {
-          rightSlide.style.left = `${width / (2 - 0.75*i)}px`;
-          //rightSlide.style.display = "none";
+          rightSlide.style.zIndex = slides.length - i; 
+          rightSlide.style.left = `${
+            width / 2 + a * Math.cos((Math.Pi * 3) / 2 + delta * i * 2)
+          }px`;
         }
   }
 }
+function clickHolder() {
+const order = parseInt(this.dataset.order, 10);
+activeOrder = order;
+update ();
+};  
