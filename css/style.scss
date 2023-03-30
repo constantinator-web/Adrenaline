@@ -897,6 +897,91 @@ img {
 .tracks {
 	background: #0E0F0F;
 	padding-bottom: 125px;
+
+	&__header {
+		font-size: 30px;
+		font-family: "Druk Text Wide Cyr Heavy", sans-serif;
+		color: #fff;
+		margin-bottom: 36px;
+		text-transform: uppercase;
+	}
+
+	&__swiper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__tabs {
+		color: #585a5b;
+		line-height: 26px;
+		font-size: 16px;
+		font-family: "Druk Text Wide Cyr Heavy", sans-serif;
+		text-transform: uppercase;
+		
+	}
+
+	&__switcher {
+		display: inline-block;
+		margin-bottom: 25px;
+		cursor: pointer;
+	}
+
+	.switcher-active {
+		display: inline-block;
+		font-size: 20px;
+		color: #fff;
+	}
+	
+	.switcher-active::before {
+		content: "";
+		display: block;
+		width: 100%;
+		border-bottom: 4px solid #e44a42;
+		position: absolute;
+		bottom: -10px;
+		left: 0;	
+	}
+
+	&__item-about {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item-about &__item-param:first-child {
+		display: none;
+	}
+
+	&__item-param {
+		width: calc(50% - 10px);
+		background: #141719;
+		border-radius: 20px;
+		padding: 40px 25px;
+	}
+
+	&__item-param-open, &__item-param-close  {
+		display: none;
+		font-size: 13px;
+		color: #585a5b;
+		
+	}
+
+	&__item-param-open span, &__item-param-close span {
+		display: inline-block;
+		font-family: "Druk Text Wide Cyr Heavy", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		color: #bf4d46;
+		letter-spacing: -0.6px;
+		margin-bottom: 9px;
+
+	}
+
+	.item-active {
+		display: inline-block;
+	} 
+
+
+
 	&__about {
 		display: flex;
 		flex-wrap: wrap;
