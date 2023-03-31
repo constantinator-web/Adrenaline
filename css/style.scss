@@ -18,6 +18,7 @@
 
 html {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 body, *, *::after,
@@ -81,7 +82,7 @@ img {
 	padding: 30px 0;
 	opacity: 0;
 	pointer-events: none;
-//overflow: hidden;
+	overflow: hidden;
 }
 
 .open {
@@ -911,6 +912,17 @@ img {
 		flex-direction: column;
 	}
 
+	&__swiper::before {
+		content: "";
+		width: 200%;
+		height: 90%;
+		opacity: 0.2;
+		left: -50%;
+		bottom: -25%;
+		position: absolute;
+		background: radial-gradient(44.81% 48.08% at 49.85% 48.17%, #e44a42 0%, rgba(228, 74, 66, 0) 100%);
+	}
+
 	&__tabs {
 		color: #585a5b;
 		line-height: 26px;
@@ -980,9 +992,29 @@ img {
 		display: inline-block;
 	} 
 
+	&__track-map {
+		margin-top: 25px;
+		display: block;
+		min-height: 230px;
+		width: calc(100vw - 60px);
+	}
+
+	&__discripton-map-open, &__discripton-map-close {
+		display: none;
+	}
+
+	.discripton-map-active {
+		padding: 10px 20px;
+		display: block;
+	}
+
+	.discripton-map-active p {
+		color: #fff;
+	}
 
 
 	&__about {
+		margin-top: 80px;
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;

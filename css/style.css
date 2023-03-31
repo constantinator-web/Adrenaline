@@ -16,6 +16,7 @@
 }
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body, *, *::after,
@@ -76,6 +77,7 @@ img {
   padding: 30px 0;
   opacity: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .open {
@@ -801,6 +803,16 @@ img {
   display: flex;
   flex-direction: column;
 }
+.tracks__swiper::before {
+  content: "";
+  width: 200%;
+  height: 90%;
+  opacity: 0.2;
+  left: -50%;
+  bottom: -25%;
+  position: absolute;
+  background: radial-gradient(44.81% 48.08% at 49.85% 48.17%, #e44a42 0%, rgba(228, 74, 66, 0) 100%);
+}
 .tracks__tabs {
   color: #585a5b;
   line-height: 26px;
@@ -857,7 +869,24 @@ img {
 .tracks .item-active {
   display: inline-block;
 }
+.tracks__track-map {
+  margin-top: 25px;
+  display: block;
+  min-height: 230px;
+  width: calc(100vw - 60px);
+}
+.tracks__discripton-map-open, .tracks__discripton-map-close {
+  display: none;
+}
+.tracks .discripton-map-active {
+  padding: 10px 20px;
+  display: block;
+}
+.tracks .discripton-map-active p {
+  color: #fff;
+}
 .tracks__about {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
