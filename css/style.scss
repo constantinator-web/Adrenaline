@@ -18,7 +18,6 @@
 
 html {
 	box-sizing: border-box;
-	overflow-x: hidden;
 }
 
 body, *, *::after,
@@ -39,6 +38,7 @@ body {
 
 .lock {
 	overflow: hidden;
+	position: fixed;
 }
 
 img {
@@ -898,6 +898,18 @@ img {
 .tracks {
 	background: #0E0F0F;
 	padding-bottom: 125px;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 30%;
+		opacity: 0.2;
+		left: 0%;
+		top: 13%;
+		position: absolute;
+		background: radial-gradient(44.81% 48.08% at 49.85% 48.17%, #e44a42 0%, rgba(228, 74, 66, 0) 100%);
+	}
 
 	&__header {
 		font-size: 30px;
@@ -910,17 +922,6 @@ img {
 	&__swiper {
 		display: flex;
 		flex-direction: column;
-	}
-
-	&__swiper::before {
-		content: "";
-		width: 200%;
-		height: 90%;
-		opacity: 0.2;
-		left: -50%;
-		bottom: -25%;
-		position: absolute;
-		background: radial-gradient(44.81% 48.08% at 49.85% 48.17%, #e44a42 0%, rgba(228, 74, 66, 0) 100%);
 	}
 
 	&__tabs {
@@ -993,6 +994,7 @@ img {
 	} 
 
 	&__track-map {
+		cursor: pointer;
 		margin-top: 25px;
 		display: block;
 		min-height: 230px;
