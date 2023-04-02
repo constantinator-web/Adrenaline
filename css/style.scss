@@ -88,7 +88,7 @@ img {
 .open {
 	opacity: 1;
 	pointer-events: all;
-	overflow: hidden;
+	//overflow: hidden;
 }
 
 .modal__header {
@@ -911,6 +911,10 @@ img {
 		background: radial-gradient(44.81% 48.08% at 49.85% 48.17%, #e44a42 0%, rgba(228, 74, 66, 0) 100%);
 	}
 
+	.controlTracksPrev {
+		display: none;
+	}
+
 	&__header {
 		font-size: 30px;
 		font-family: "Druk Text Wide Cyr Heavy", sans-serif;
@@ -933,10 +937,11 @@ img {
 		
 	}
 
-	&__switcher {
+	&__switcher-closed, &__switcher-opened {
 		display: inline-block;
 		margin-bottom: 25px;
 		cursor: pointer;
+		transition: 0.3s;
 	}
 
 	.switcher-active {
@@ -981,7 +986,7 @@ img {
 	&__item-param-open span, &__item-param-close span {
 		display: inline-block;
 		font-family: "Druk Text Wide Cyr Heavy", sans-serif;
-		font-size: 20px;
+		font-size: 19px;
 		font-weight: 700;
 		color: #bf4d46;
 		letter-spacing: -0.6px;
@@ -1008,6 +1013,7 @@ img {
 	.discripton-map-active {
 		padding: 10px 20px;
 		display: block;
+		min-height: 202px;
 	}
 
 	.discripton-map-active p {
